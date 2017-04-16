@@ -2,5 +2,21 @@
   "name": "origin-of-graphql",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon -w ./server -e yml,js ./entry.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "graphql": "^0.9.3",
+    "graphql-server-express": "^0.7.0",
+    "jest": "^19.0.2",
+    "next": "^2.1.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "swagger-express-middleware": "^1.0.0-alpha.12"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }

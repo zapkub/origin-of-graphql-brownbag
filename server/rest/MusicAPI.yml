@@ -1,0 +1,96 @@
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: Swagger MusicAPI 
+  description: A sample API that demonstrates Swagger-Express-Middleware features
+
+consumes:
+  - application/json
+produces:
+  - application/json
+
+definitions:
+  collection:
+    properties:
+      collectionName:
+        type: string
+      artistId:
+        type: number
+      year:
+        type: integer
+      id:
+        type: integer 
+
+  track:
+    properties:
+      artistId:
+        $ref: "#/definitions/artist"
+      trackId:
+        type: number
+      trackName:
+        type: string
+      trackTimeMillis:
+        type: number
+      trackPrice:
+        type: number
+
+  artist:
+    properties:
+      id:
+        type: number
+      artistName:
+        type: string
+      
+
+paths:
+  /collections:
+    get:
+      description: Get collection (album) list
+      parameters:
+        - name: collectionName
+          in: query
+          type: string
+      responses:
+        default:
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/collection"
+  /tracks:
+    get:
+      description: Return tracks with filter optinal
+      parameters:
+        - name: trackName
+          in: query
+          type: string
+        - name: id
+          in: query
+          type: number
+      responses:
+        default:
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/track"
+  /artists:
+    get:
+      description: Returns all artist
+      operationId: findArtist
+      parameters:
+        - name: artistName
+          in: query
+          type: string
+        - name: id
+          in: query
+          type: number
+      responses:
+        default:
+          description: Returns the matching artist
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/artist"
+          headers:
+            last-modified:
+              type: string
+              description: The date/time that a pet was last modified

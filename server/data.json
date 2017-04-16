@@ -1,0 +1,60 @@
+{
+    "collections": [
+        {
+            "collectionName": "A Head Full of Dreams",
+            "year": 2558,
+            "id": 1053933969,
+            "artistId": 471744
+        },
+        {
+            "collectionName": "Parachutes",
+            "year": 2543,
+            "artistId": 471744,
+            "id": 1122782080
+        },
+        {
+            "collectionName": "Mylo Xyloto",
+            "artistId": 471744,
+            "year": 2554,
+            "id": 726372830
+        }
+    ],
+    "tracks": [
+        {
+            "artistId": 471744,
+            "trackId": 726373148,
+            "collectionId": 726372830,
+            "trackName": "Paradise",
+            "trackTimeMillis": 277610,
+            "trackPrice": 1.29
+        },
+        {
+            "artistId": 471744,
+            "collectionId": 726372830,
+            "trackId": 726373202,
+            "trackTimeMillis": 258827,
+            "trackName": "Princess of China",
+            "trackPrice": 1.29
+        },
+        {
+            "trackName": "Hymn for the Weekend",
+            "collectionId": 1053933969,
+            "artistId": 471744,
+            "trackPrice": 1.29,
+            "trackTimeMillis": 258827
+        },
+        {
+            "trackName": "Trouble",
+            "collectionId": 1122782080,
+            "artistId": 471744,
+            "trackPrice": 1.29,
+            "trackTimeMillis": 270731
+        }
+    ],
+    "artists": [
+        {
+            "id": 471744,
+            "artistName": "Coldplay"
+        }
+    ]
+}
