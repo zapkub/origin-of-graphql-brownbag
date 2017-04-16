@@ -1,4 +1,4 @@
-# Origin of GraphQL
+# Origin of GraphQL 🕺🏽
 
 1. Before GraphQL
 2. Restful vs Soap 
