@@ -1,4 +1,4 @@
-# Origin of GraphQL 🕺🏽
+# Origin of GraphQL
 
 1. Before GraphQL
 2. Restful vs Soap 
@@ -10,3 +10,4 @@
 8. Live coding
 9. Contributor and Supportor
 10. GraphQL Compose!
+11. explore more

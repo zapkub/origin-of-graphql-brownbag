@@ -1,4 +1,4 @@
-const server = require('./server');
+const server = require('./server')
 
-server.init();
-server.start();
+server.init()
+server.start()
