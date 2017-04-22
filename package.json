@@ -7,16 +7,26 @@
     "start": "nodemon -w ./server -e yml,js ./entry.js"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "graphql": "^0.9.3",
+    "graphql-compose": "^1.18.1",
     "graphql-server-express": "^0.7.0",
     "jest": "^19.0.2",
+    "morgan": "^1.8.1",
     "next": "^2.1.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "swagger-express-middleware": "^1.0.0-alpha.12"
   },
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "react-native"
+    ]
+  },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "standard": "^10.0.2"
   }
 }

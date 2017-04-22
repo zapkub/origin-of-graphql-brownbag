@@ -10,3 +10,4 @@
 8. Live coding
 9. Contributor and Supportor
 10. GraphQL Compose!
+11. explore more
